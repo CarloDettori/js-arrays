@@ -45,7 +45,21 @@ console.log(teachers)
 
 // 7. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
-const isFabioPresent = null;
+
+//done with 
+const isFabioPresent = teachers.includes("Fabio");
+console.log(isFabioPresent) 
+
+//done with for
+
+for(let i = 0; i >= teachers.length; i++) {
+  if (teachers[i] == "Fabio") {
+    console.log(`${isFabioPresent} is present`);
+    isFabioPresent = teachers[i];
+  } else {
+    console.log(`${isFabioPresent} is absent`)
+  }
+}
 
 // 8. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
