@@ -26,7 +26,7 @@ console.log(lastTeacher)
 console.log(teachers)
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
-const firstTeacher = teachers.shift();
+const firstTeacher = teachers.unshift();
 console.log(firstTeacher)
 console.log(teachers)
 
