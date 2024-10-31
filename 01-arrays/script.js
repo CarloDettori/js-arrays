@@ -50,7 +50,7 @@ let isFabioPresent = {}
 for (let i = 0; i < teachers.length; i++) {
   if (teachers[i] === "Fabio") {
     isFabioPresent = teachers[i]
-    console.log(`${isFabioPresent} is present`);
+    console.log(`${isFabioPresent} is present at ${i+1}° place`);
   }
 }
 
