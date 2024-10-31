@@ -59,13 +59,14 @@ let lewisIndex = null
 for (let i = 0; i < teachers.length; i++) {
   if (teachers[i] === "Lewis") {
     lewisIndex = teachers.indexOf(teachers[i]);
-    console.log(`${lewisIndex} is ${teachers[i]}'s index`);
+    console.log(`${lewisIndex+1} is ${teachers[i]}'s index`);
   }
 }
 
 // 9. Unisci tutti gli insegnanti nell'array teachers in una stringa
 // separata da virgole e salvala nella variabile teachersString
-const teachersString = null;
+const teachersString = teachers.join(", ");
+console.log(teachersString)
 
 // 10. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
