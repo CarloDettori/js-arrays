@@ -41,23 +41,25 @@ console.log(teachers)
 
 // 7. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
-let isFabioPresent = null;
+let isFabioPresent = false;
 for (let i = 0; i < teachers.length; i++) {
   if (teachers[i] === "Fabio") {
-    isFabioPresent = teachers[i]
-    console.log(`${isFabioPresent} is present at ${i+1}° place`);
+    isFabioPresent = true;
+    
   }
 }
+console.log(isFabioPresent);
 
 // 8. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
-let lewisIndex = null
+let lewisIndex = -1
 for (let i = 0; i < teachers.length; i++) {
   if (teachers[i] === "Lewis") {
-    lewisIndex = teachers.indexOf(teachers[i]);
-    console.log(`${lewisIndex+1} is ${teachers[i]}'s index`);
+    lewisIndex = i;
+    
   }
 }
+console.log(lewisIndex);
 
 // 9. Unisci tutti gli insegnanti nell'array teachers in una stringa
 // separata da virgole e salvala nella variabile teachersString
